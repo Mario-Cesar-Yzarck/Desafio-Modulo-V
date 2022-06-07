@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+:root {
+    --body-background: rgb(250, 249, 252);
+    --body-color: rgb(17, 6, 6);
+    --body-color-p: rgb(131,131,131);
+    --navy-and-buttons: rgb(0, 128, 237);
+    --form-background: rgb(203, 226, 247);  
+    --btn-color-and-navy: rgb(255, 255, 255); 
+    --input-color: rgb(255, 255, 255);
+}
+
+.dark-mode:root {
+    --body-background: rgb(26, 25, 26);
+    --body-color: rgb(245, 245, 248);
+    --body-color-p: rgb(182, 192, 212);
+    --navy-and-buttons: rgb(0, 128, 237);
+    --form-background: rgb(8, 36, 63);  
+    --btn-color-and-navy: rgb(255, 255, 255);
+    --input-color: rgb(189, 193, 198);
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: "Source Sans Pro", 'Times New Roman';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--body-background);
+    color: var(--body-color)
+} 
+
+/* HEADER */
+
+header {
+    background-color: var(--navy-and-buttons);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    height: 80px;
+    margin: auto;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--btn-color-and-navy);
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 24px;
+    transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+header .container img{
+    height: 30px;
+}
+
+/* MAIN */
+main {
+    margin-bottom: 100px;
+}
+
+main .container-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 100px auto 0px auto;
+}
+
+h2{
+    color: var(--body-color);
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+h3{
+    color: var(--body-color-p);
+    font-size: 20px;
+    line-height: 28px;
+    margin: 10px 0;
+}
+
+main .container-main img{
+    width: 600px;
+}
+
+main input {
+    background-color: var(--input-color);
+
+}
+
+/* CARDS */
+
+.cards {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.text--medium{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--body-color-p);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px var(--body-color);
+    transition: all 0.3s ease 0s;
+}
+
+.card:hover{
+    transform: translateY(-7px);
+}
+
+.image {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image img{
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    padding: 20px;   
+}
+
+.title{
+    margin-bottom:0px;
+}
+
+
+/* Formulário */
+
+#form {
+    display: flex;
+    justify-content: center;    
+}
+
+.desafio {
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--form-background);
+    color: var(--body-color);
+}
+
+.desafio .note {
+    display: flex;
+    flex-direction: row;
+}
+
+.note p {
+    margin-top: 3px;
+}
+
+.note p:not(:first-child) {
+    margin-left: 20px;
+}
+
+.note p:not(:last-child) {
+    margin-right: 20px;
+}
+
+form .mensage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form .mensage textarea {
+  padding: 10px;
+}
+
+form .mensage p {
+    margin: 10px 0;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+#form h3 {
+    color:var(--body-color)
+}
+
+
+form input {
+    width: 150px;
+    padding-left: 15px;
+    font-size: 10px;
+    height: 30px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    border: 2px solid var(--navy-and-buttons);
+}
+
+form label {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+form [type="submit"] {
+    background-color: var(--navy-and-buttons);
+    color: var(--btn-color-and-navy);
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+
+/* --------------------------- DARK MODE ------------------------------ */
+
+#checkbox {
+    display: none;
+}
+
+.toggler {
+    display: block;
+    width: 60px;
+    height: 31px;
+    border: 2px solid var(--navy-and-buttons);
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.ball, .sun, .moon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ball {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: var(--navy-and-buttons);
+    border-radius: 50%;
+    left: 1px;
+    z-index: 10;
+    transition: transform .5s ease-in-out;
+}
+
+.sun {
+    left: 5px;
+}
+
+.moon {
+    right: 5px;
+}
+
+#checkbox:checked + .ball {
+    transform: translate(29px, -50%);
+}
