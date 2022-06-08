@@ -297,7 +297,28 @@ form [type="submit"]:hover {
     transform: translate(29px, -50%);
 }
 
-footer .publicity {
-    background-color: #0080ed;
-    width: 100%; 
+
+
+/* -------------------------------- Footer --------------------------------*/
+footer {   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;    
+    background-color: #0080ef;    
+}
+
+footer .publicity {    
+    overflow: hidden;
+    height: 80px;
+    width: 400px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);    
+}
+
+footer .publicity img {
+    object-fit: cover;
+    height: 80px;
+    width: 400px;
 }
