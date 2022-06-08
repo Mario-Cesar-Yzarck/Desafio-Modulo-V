@@ -296,3 +296,8 @@ form [type="submit"]:hover {
 #checkbox:checked + .ball {
     transform: translate(29px, -50%);
 }
+
+footer .publicity {
+    background-color: #0080ed;
+    width: 100%; 
+}
