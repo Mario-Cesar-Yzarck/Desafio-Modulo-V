@@ -33,7 +33,7 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     background-color: var(--body-background);
-    color: var(--body-color)
+    color: var(--body-color);
 } 
 
 /* HEADER */
@@ -225,7 +225,6 @@ form {
     color:var(--body-color)
 }
 
-
 form input {
     width: 150px;
     padding-left: 15px;
@@ -234,6 +233,10 @@ form input {
     margin-bottom: 13px;
     border-radius: 20px;
     border: 2px solid var(--navy-and-buttons);
+}
+
+form input #birthday {
+    width: 100px;
 }
 
 form label {
@@ -252,7 +255,7 @@ form [type="submit"]:hover {
 }
 
 
-/* --------------------------- DARK MODE ------------------------------ */
+/* --------------------------- DARK MODE BUTTON --------------------------- */
 
 #checkbox {
     display: none;
@@ -304,20 +307,22 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;    
-    background-color: #0080ef;    
+    margin: 0;  
+    background-color: var(--navy-and-buttons); 
 }
 
 footer .publicity {    
     overflow: hidden;
     height: 80px;
-    width: 400px;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);    
+    width: 400px;    
+}
+
+footer .container {
+    display: flex;    
 }
 
 footer .publicity img {
+    position: absolute;
     object-fit: cover;
     height: 80px;
     width: 400px;
