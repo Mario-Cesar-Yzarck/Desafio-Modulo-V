@@ -20,21 +20,21 @@ function changeImg() {
     }
 
     if(counter === 1) {
-        img1.style.zIndex = "10";
-        img2.style.zIndex = "-1";
-        img3.style.zIndex = "-1";
+        img1.style.zIndex = "1";
+        img2.style.zIndex = "0";
+        img3.style.zIndex = "0";
         return;
     } else if(counter === 2) {
-        img2.style.zIndex = "10";
-        img3.style.zIndex = "-1";
-        img1.style.zIndex = "-1";
+        img2.style.zIndex = "1";
+        img3.style.zIndex = "0";
+        img1.style.zIndex = "0";
         return
     } else {
-        img3.style.zIndex = "10";
-        img2.style.zIndex = "-1";
-        img1.style.zIndex = "-1";
+        img3.style.zIndex = "1";
+        img2.style.zIndex = "0";
+        img1.style.zIndex = "0";
         return;
     }    
 }
 
-setInterval(changeImg, 3000)
+setInterval(changeImg, 5000)
