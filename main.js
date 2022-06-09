@@ -1,9 +1,11 @@
+/*
 const html = document.querySelector('html');
 const checkbox = document.querySelector('#checkbox');
 
 checkbox.addEventListener('change', e => {    
     html.classList.toggle('dark-mode')
 })
+*/
 
 const img1 = document.getElementById('img1')
 const img2 = document.getElementById('img2')

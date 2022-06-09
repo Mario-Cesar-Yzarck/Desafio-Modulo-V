@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Avaliação</title>
+    <script src="https://kit.fontawesome.com/0b165d48f8.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+    <a href="./index.html">Retornar a página principal.</a>
+    <section id="form">
+        <div class="desafio">
+            <label for="checkbox" class="toggler">
+                <input type="checkbox" id="checkbox">
+                <span class="ball"></span>
+                <i class="fa-solid fa-sun sun"></i>
+                <i class="fa-solid fa-moon moon"></i>        
+            </label>
+            <h3>Ajude-nos a melhorar</h3>
+            <form action="#" method="post" type="submit">
+                <h3>FORMULÁRIO DE AVALIAÇÃO</h3>
+                <div class="data">
+                    <label for="name">Nome completo:</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="birthday">Data de nascimento:</label>
+                    <input type="date" name="birthday" id="birthday">
+                </div>
+                <label for="note">De modo geral, que nota vocês daria ao nosso site?</label>
+                <div class="note">
+                    <p>1</p><input type="range" min="1" max="10" value="5" id="note">
+                    <p>10</p>
+                </div>
+                <div class="quest-one">
+                    <p>Você recomendaria nosso site para um amigo?</p>
+                    <input type="radio" name="quest-one" id="yes-one">
+                    <label for="yes-one">Sim</label>
+                    <input type="radio" name="quest-one" id="no-one">
+                    <label for="no-one">Não</label>
+                    <input type="radio" name="quest-one" id="maybe">
+                    <label for="maybe">Talvez</label>
+                </div>
+                <div class="quest-two">
+                    <p>Você gostou do nosso site com Dark Mode?</p>
+                    <input type="radio" name="quest-two" id="yes-two">
+                    <label for="yes-two">Sim</label>
+                    <input type="radio" name="quest-two" id="no-two">
+                    <label for="no-two">Não</label>
+                    <input type="radio" name="quest-two" id="not-see">
+                    <label for="not-see">Nem vi!</label>
+                </div>
+                <div class="mensage">
+                    <p>Envie uma mensagem com sugestões para podermos melhorar ainda mais no futuro!</p>
+                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Enviar" />
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="publicity" id="publicity">
+            <div class="container">
+                <img src="./images/1.png" alt="" class="merchan" id="img1">
+                <img src="./images/2.png" alt="" class="merchan" id="img2">
+                <img src="./images/3.png" alt="" class="merchan" id="img3">
+            </div>            
+        </div>
+    </footer>
+</body>
+</html>
