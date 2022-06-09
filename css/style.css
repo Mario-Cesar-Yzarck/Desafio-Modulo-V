@@ -246,6 +246,7 @@ form label {
 }
 
 form [type="submit"] {
+    padding: 0;
     background-color: var(--navy-and-buttons);
     color: var(--btn-color-and-navy);
 }
@@ -254,6 +255,18 @@ form [type="submit"]:hover {
     cursor: pointer;
 }
 
+.quest-one input, .quest-two input {
+    width: 20px;
+    height: 20px;
+}
+
+.quest-one {
+    padding: 20px 0;
+}
+
+.labelRange {
+    margin-top: 20px;
+}
 
 /* --------------------------- DARK MODE BUTTON --------------------------- */
 
@@ -313,8 +326,8 @@ footer {
 
 footer .publicity {    
     overflow: hidden;
-    height: 80px;
-    width: 400px;    
+    height: 100px;
+    width: 980px;    
 }
 
 footer .container {
@@ -324,6 +337,13 @@ footer .container {
 footer .publicity img {
     position: absolute;
     object-fit: cover;
+<<<<<<< HEAD
     height: 77px;
     width: 400px;
 }
+=======
+    height: 100px;
+    width: 980px;
+}
+
+>>>>>>> 286dd9b1bd8c2e5c6ab0224bfc55da9b5e8e1b6e

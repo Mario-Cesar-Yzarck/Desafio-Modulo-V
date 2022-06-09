@@ -127,22 +127,30 @@
                 <i class="fa-solid fa-sun sun"></i>
                 <i class="fa-solid fa-moon moon"></i>        
             </label>
-            <h3>Envie uma mensagem contando da sua experiência em nosso site!</h3>
+            <h3>Ajude-nos a melhorar usando o formulário abaixo.</h3>
             <form action="#" method="post" type="submit">
                 <h3>FORMULÁRIO DE AVALIAÇÃO</h3>
                 <div class="data">
-                    <label for="name">Nome completo:</label>
-                    <input type="text" name="name" id="name">
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email">
-                    <label for="birthday">Data de nascimento:</label>
-                    <input type="date" name="birthday" id="birthday">
+                    <div class="inputForm">
+                        <label for="name">Nome completo:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="inputForm">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="inputForm">
+                        <label for="birthday">Data de nascimento:</label>
+                        <input type="date" name="birthday" id="birthday">
+                    </div>    
                 </div>
-                <label for="note">De modo geral, que nota vocês daria ao nosso site?</label>
-                <div class="note">
-                    <p>1</p><input type="range" min="1" max="10" value="5" id="note">
-                    <p>10</p>
-                </div>
+                <div class="labelRange">
+                    <label for="note">De modo geral, que nota vocês daria ao nosso site?</label>
+                    <div class="note">
+                        <p>1</p><input type="range" min="1" max="10" value="5" id="note">
+                        <p>10</p>
+                    </div>
+                </div>                
                 <div class="quest-one">
                     <p>Você recomendaria nosso site para um amigo?</p>
                     <input type="radio" name="quest-one" id="yes-one">
