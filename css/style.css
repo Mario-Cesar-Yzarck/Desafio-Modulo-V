@@ -189,6 +189,7 @@ form [type="submit"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 40px 0;
 }
 
 #link-desafio .sub-title {
