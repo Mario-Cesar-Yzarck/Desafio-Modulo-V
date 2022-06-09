@@ -21,7 +21,7 @@
                 <i class="fa-solid fa-sun sun"></i>
                 <i class="fa-solid fa-moon moon"></i>        
             </label>            
-            <form action="#" method="post" type="submit">
+            <form action="">
                 <h3>FORMULÁRIO DE AVALIAÇÃO</h3>
                 <div class="data">
                     <label for="name">Nome completo:</label>
@@ -38,27 +38,27 @@
                 </div>
                 <div class="quest-one">
                     <p>Você recomendaria nosso site para um amigo?</p>
-                    <input type="radio" name="quest-one" id="yes-one">
+                    <input type="radio" name="quest-one" id="yes-one" value="Sim">
                     <label for="yes-one">Sim</label>
-                    <input type="radio" name="quest-one" id="no-one">
+                    <input type="radio" name="quest-one" id="no-one" value="Não">
                     <label for="no-one">Não</label>
-                    <input type="radio" name="quest-one" id="maybe">
+                    <input type="radio" name="quest-one" id="maybe" value="Talvez">
                     <label for="maybe">Talvez</label>
                 </div>
                 <div class="quest-two">
                     <p>Você gostou do nosso site com Dark Mode?</p>
-                    <input type="radio" name="quest-two" id="yes-two">
+                    <input type="radio" name="quest-two" id="yes-two" value="Sim">
                     <label for="yes-two">Sim</label>
-                    <input type="radio" name="quest-two" id="no-two">
+                    <input type="radio" name="quest-two" id="no-two" value="Não">
                     <label for="no-two">Não</label>
-                    <input type="radio" name="quest-two" id="not-see">
-                    <label for="not-see">Nem vi!</label>
+                    <input type="radio" name="quest-two" id="not-see" value="Não reparei">
+                    <label for="not-see">Não reparei</label>
                 </div>
                 <div class="mensage">
                     <p>Envie uma mensagem com sugestões para podermos melhorar ainda mais no futuro!</p>
                     <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
                 </div>
-                <input type="submit" value="Enviar" />
+                <button id="btn-submit">Enviar</button>              
             </form>
         </div>
     </section>
