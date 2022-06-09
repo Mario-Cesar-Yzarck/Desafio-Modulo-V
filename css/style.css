@@ -22,7 +22,7 @@
     --body-color-p: rgb(182, 192, 212);
     --navy-and-buttons: rgb(0, 128, 237);
     --form-background: rgb(8, 36, 63);  
-    --btn-color-and-navy: rgb(255, 255, 255);
+    --btn-color-and-navy: rgb(255, 255, 255);    
 }
 
 html,
@@ -168,7 +168,7 @@ main input {
 form input {
     width: 150px;
     padding-left: 15px;
-    font-size: 10px;
+    font-size: 12px;
     height: 30px;
     margin-bottom: 13px;
     border-radius: 20px;

@@ -151,6 +151,23 @@ form [type="submit"]:hover {
     margin-top: 20px;
 }
 
+#btn-submit {
+    width: 150px;
+    padding-left: 15px;
+    font-size: 16px;
+    height: 30px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    border: 2px solid var(--navy-and-buttons);
+    padding: 0;
+    background-color: var(--navy-and-buttons);
+    color: var(--btn-color-and-navy);
+}
+
+#btn-submit:hover {
+    cursor: pointer;
+}
+
 
 /* --------------------------- DARK MODE BUTTON --------------------------- */
 
@@ -285,4 +302,15 @@ footer .publicity img {
         object-fit: contain;
         justify-content: left;
     }
+    .data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desafio form .note {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }      
 }
