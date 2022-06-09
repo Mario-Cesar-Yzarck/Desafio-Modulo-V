@@ -1,4 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
 
+:root {
+    --body-background: rgb(250, 249, 252);
+    --body-color: rgb(17, 6, 6);
+    --body-color-p: rgb(131,131,131);
+    --navy-and-buttons: rgb(0, 128, 237);
+    --form-background: rgb(203, 226, 247);  
+    --btn-color-and-navy: rgb(255, 255, 255); 
+    --input-color: rgb(255, 255, 255);
+}
+
+.dark-mode:root {
+    --body-background: rgb(26, 25, 26);
+    --body-color: rgb(245, 245, 248);
+    --body-color-p: rgb(182, 192, 212);
+    --navy-and-buttons: rgb(0, 128, 237);
+    --form-background: rgb(8, 36, 63);  
+    --btn-color-and-navy: rgb(255, 255, 255);
+    --input-color: rgb(189, 193, 198);
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: "Source Sans Pro", 'Times New Roman';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--body-background);
+    color: var(--body-color);
+    margin-top: 10px;
+} 
+
+body .link-return {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--body-color);
+    padding: 30px;
+}
+
+/*------------------------ Formulário --------------------------*/
+
+#form {
+    display: flex;
+    justify-content: center;    
+}
+
+.desafio {
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--form-background);
+    color: var(--body-color);
+}
+
+.desafio .note {
+    display: flex;
+    flex-direction: row;
+}
+
+.note p {
+    margin-top: 3px;
+}
+
+.note p:not(:first-child) {
+    margin-left: 20px;
+}
+
+.note p:not(:last-child) {
+    margin-right: 20px;
+}
+
+form .mensage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form .mensage textarea {
+  padding: 10px;
+}
+
+form .mensage p {
+    margin: 10px 0;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+#form h3 {
+    color:var(--body-color)
+}
+
+form input {
+    width: 150px;
+    padding-left: 15px;
+    font-size: 10px;
+    height: 30px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    border: 2px solid var(--navy-and-buttons);
+}
+
+form input #birthday {
+    width: 100px;
+}
+
+form label {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+form [type="submit"] {
+    padding: 0;
+    background-color: var(--navy-and-buttons);
+    color: var(--btn-color-and-navy);
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+.quest-one input, .quest-two input {
+    width: 20px;
+    height: 20px;
+}
+
+.quest-one {
+    padding: 20px 0;
+}
+
+.labelRange {
+    margin-top: 20px;
+}
 
 
 /* --------------------------- DARK MODE BUTTON --------------------------- */
@@ -44,4 +191,63 @@
 
 #checkbox:checked + .ball {
     transform: translate(29px, -50%);
+}
+
+
+/*----------------------------- Footer-----------------------------*/
+footer {   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;  
+    background-color: var(--navy-and-buttons); 
+}
+
+footer .publicity {    
+    overflow: hidden;
+    height: 100px;
+    width: 980px;    
+}
+
+footer .container {
+    display: flex;     
+}
+
+footer .publicity img {
+    position: absolute;
+    object-fit: cover;
+    height: 100px;
+    width: 980px;
+}
+
+@media only screen and (max-width: 426px) {
+    footer {
+        max-height: 100px;
+        background-color: var(--navy-and-buttons);
+    }
+      
+    footer .publicity .container #img1, footer .publicity .container #img2, footer .publicity .container #img3 {   
+        width: 100%;
+        object-fit: contain;
+        justify-content: left;
+    }
+
+    footer .publicity {
+        height: 100px;
+        width: 425px;
+    }
+
+    .container img {
+        height: auto;
+    }
+
+    .toggler {
+        height: 26px;
+    }
+
+    .ball {
+        width: 20px;
+        height: 20px;
+        left: 3px;
+    }
 }

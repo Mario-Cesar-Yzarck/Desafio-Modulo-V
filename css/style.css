@@ -23,7 +23,6 @@
     --navy-and-buttons: rgb(0, 128, 237);
     --form-background: rgb(8, 36, 63);  
     --btn-color-and-navy: rgb(255, 255, 255);
-    --input-color: rgb(189, 193, 198);
 }
 
 html,
@@ -86,7 +85,7 @@ main .container-main{
     align-items: center;
     justify-content: space-between;
     max-width: 980px;
-    margin: 100px auto 0px auto;
+    margin: 0px auto 0px auto;
 }
 
 h2{
@@ -165,66 +164,7 @@ main input {
     margin-bottom:0px;
 }
 
-
-/* Formulário */
-
-#form {
-    display: flex;
-    justify-content: center;    
-}
-
-.desafio {
-    margin: 50px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--form-background);
-    color: var(--body-color);
-}
-
-.desafio .note {
-    display: flex;
-    flex-direction: row;
-}
-
-.note p {
-    margin-top: 3px;
-}
-
-.note p:not(:first-child) {
-    margin-left: 20px;
-}
-
-.note p:not(:last-child) {
-    margin-right: 20px;
-}
-
-form .mensage {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-form .mensage textarea {
-  padding: 10px;
-}
-
-form .mensage p {
-    margin: 10px 0;
-}
-
-
-form {
-    margin-top: 20px;
-}
-
-#form h3 {
-    color:var(--body-color)
-}
-
+/*--------------------------- Main ------------------------------------*/
 form input {
     width: 150px;
     padding-left: 15px;
@@ -233,16 +173,6 @@ form input {
     margin-bottom: 13px;
     border-radius: 20px;
     border: 2px solid var(--navy-and-buttons);
-}
-
-form input #birthday {
-    width: 100px;
-}
-
-form label {
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
 }
 
 form [type="submit"] {
@@ -255,32 +185,71 @@ form [type="submit"]:hover {
     cursor: pointer;
 }
 
-.quest-one input, .quest-two input {
-    width: 20px;
-    height: 20px;
-}
-
-.quest-one {
-    padding: 20px 0;
-}
-
-.labelRange {
-    margin-top: 20px;
-}
-
 #link-desafio {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 #link-desafio .sub-title {
   text-align: center;
   position: relative;
   padding: 20px;
+  color: var(--body-color)
 }
 
+#link-desafio .link-tag {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--body-color)
+}
+
+/* --------------------------- DARK MODE BUTTON --------------------------- */
+
+#checkbox {
+    display: none;
+}
+
+.toggler {
+    display: block;
+    width: 60px;
+    height: 31px;
+    border: 2px solid var(--navy-and-buttons);
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.ball, .sun, .moon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ball {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: var(--navy-and-buttons);
+    border-radius: 50%;
+    left: 1px;
+    z-index: 10;
+    transition: transform .5s ease-in-out;
+}
+
+.sun {
+    left: 5px;
+}
+
+.moon {
+    right: 5px;
+}
+
+#checkbox:checked + .ball {
+    transform: translate(29px, -50%);
+}
 
 
 /* -------------------------------- Footer --------------------------------*/
