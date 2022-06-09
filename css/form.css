@@ -52,6 +52,10 @@ body .link-return {
     justify-content: center;    
 }
 
+#form form h3 {
+    margin-bottom: 20px;
+}
+
 .desafio {
     margin: 50px;
     padding: 20px;
@@ -221,6 +225,26 @@ footer .publicity img {
 }
 
 @media only screen and (max-width: 426px) {
+    form {
+        text-align: center;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desafio form .note {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .note p {
+        flex: 25%;
+    }
+
     footer {
         max-height: 100px;
         background-color: var(--navy-and-buttons);
@@ -233,8 +257,7 @@ footer .publicity img {
     }
 
     footer .publicity {
-        height: 100px;
-        width: 425px;
+        height: 100px;        
     }
 
     .container img {
@@ -249,5 +272,17 @@ footer .publicity img {
         width: 20px;
         height: 20px;
         left: 3px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .desafio {
+        width: 980px;
+    }
+    
+    footer .publicity .container #img1, footer .publicity .container #img2, footer .publicity .container #img3 {   
+        width: 100%;
+        object-fit: contain;
+        justify-content: left;
     }
 }

@@ -150,6 +150,10 @@
         width: 300px;
         margin-bottom: 30px;
     }
+
+    #link-desafio .link-tag {
+        margin-right: 20px;
+    }
     
 
     footer {
@@ -166,6 +170,94 @@
     footer .publicity {
         height: 100px;
         width: 425px;
+    }
+
+    .toggler {
+        height: 26px;
+    }
+
+    body label .ball {
+        width: 20px;
+        height: 20px;
+        left: 3px;
+        top: 11px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    #form .desafio h3{
+        text-align: center;
+        padding: 0 20px;
+        margin-left: 0;
+    }
+
+    #form form .data {
+        padding: 20px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+    }
+
+    #form form .data .inputForm {
+        width: 250px;
+        align-items: center;
+        display: block;
+        padding: 20px;
+        
+    }
+
+    #form form .data label {
+        font-size: 20px;
+        width: 150px;
+        height: 20px;
+        position: absolute;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    #form form .data input {
+        width: 100px;
+        position: absolute;
+    }
+
+    .quest-one input, .quest-two input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .labelRange {
+        font-size: 16px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .labelRange label {
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    #link-desafio .link-tag {
+        margin-right: 20px;
+    }
+    
+
+    footer {
+        max-height: 100px;
+        background-color: var(--navy-and-buttons);
+    }
+      
+    footer .publicity .container #img1, footer .publicity .container #img2, footer .publicity .container #img3 {   
+        width: 100%;
+        object-fit: contain;
+        justify-content: left;
+    }
+
+    footer .publicity {
+        height: 100px;
+        width: 768px;
     }
 
     .toggler {
